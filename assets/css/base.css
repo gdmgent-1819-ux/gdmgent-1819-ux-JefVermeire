@@ -7,3 +7,144 @@ body {
   height: inherit;
   margin: 0;
 }
+
+/* Header stylinng */
+
+Header img{
+  width: 100%;
+}
+header ul{
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  padding-left: 0px;
+}
+header li{
+  display: block;
+  padding: var(--l-gutter);
+}
+header a{
+  text-decoration: none;
+  font-family: var(--t-primary);
+  font-size: var(--t-large);
+  color: var(--c-secondary);
+}
+header a:hover, .active{
+  border-bottom: 1px solid var(--c-primary);
+  color: var(--c-tertiary);
+}
+
+/* Banner*/
+.banner img{
+  width: 100%;
+}
+.banner-text{
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text h2{
+  font-size: var(--t-xlarge);
+  color: var(--c-primary);
+  font-family: var(--t-primary);
+}
+
+.about p{
+  text-align: center;
+}
+
+.buttons{
+ justify-content: center;
+ margin-bottom: 10px;
+}
+
+/* Content */
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.content img{
+  width: 20%;
+  align-self: center;
+}
+
+.img-restaurant{
+  height: 60.56px;
+}
+
+/* Info card */
+
+.info-card{
+  color: white;
+  background-color: rgb(112,112,112, 0.3);
+  margin: 10px;
+}
+
+.info-card ul{
+}
+
+.container-info{
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/photo-1505876104692-2f34b9d54303.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-position: center;
+  margin: 10px 0;
+}
+
+.info-card li{
+  padding: 10px;
+  list-style-image: url('../icons/check-solid.svg');
+}
+
+.info-card ul{
+}
+
+.card-title{
+  font-family: var(--t-primary);
+  font-size: var(--t-large);
+  text-align: center;
+}
+
+/* Footer */
+footer{
+  background-color: var(--c-secondary);
+}
+
+footer li{
+  list-style-type: none;
+}
+
+footer a, footer{
+  text-decoration: none;
+  color: white;
+}
+
+.underline{
+  text-decoration: underline;
+  font-size: var(--t-large);
+}
+
+footer img{
+  width: 20%;
+  float: right;
+}
+
+.copyright{
+  border-left: 1px solid white;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 576px){
+  header ul{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .container-info{
+    background-size: 150%; 
+  }
+}

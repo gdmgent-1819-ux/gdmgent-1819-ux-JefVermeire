@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,15 +8,162 @@
     <title>Styleguide</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/styleguide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <div class="container">
+        <h1 class="sg-title">Digital styleguide</h1>
+        <h2 class="sg-subtitle">Kleuren</h2>
+        <div class="row">
+            <div class="primary-color col-3">
+                <p>
+                    Primary color
+                </p>
+                <p>
+                    hsl(355, 57%, 56%, 1)
+                </p>
+            </div>
+            <div class="secondary-color col-3">
+                <p>
+                    Secondary color
+                </p>
+                <p>
+                    hsl(0, 0%, 44%)
+                </p>
+            </div>
+            <div class="tertiary-color col-3">
+                <p>
+                    Tertiary color
+                </p>
+                <p>
+                    hsl(0, 0%, 0%)
+                </p>
+            </div>
+        </div>
+
+        <h2 class="sg-subtitle">Typografie</h2>
+        <div class="row">
+            <p class="primary-font">
+                This is the primary font.
+            </p>
+        </div>
+        <div class="row">
+            <p class="secondary-font">
+                This is the secondary font.
+            </p>
+        </div>
+        <h2 class="sg-subtitle">Knopppen</h2>
+        <div class="row buttons">
+            <button class="btn-primary col-2">Prijzen <img src="assets/icons/chevron-right-solid.svg"
+                    alt="Arrow right"></button>
+        </div>
+        <div class="row buttons">
+            <button class="btn-secondary col-3">secondary button</button>
+        </div>
+        <h2 class="sg-subtitle">Formulier</h2>
+        <div class="row">
+            <div class="col-4 form">
+                <input type="text" placeholder="Voornaam">
+                <input type="text" placeholder="Achternaam">
+                <input type="text" placeholder="Emailadres">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Uw vraag"></textarea>
+                <button class="btn-secondary">verzenden</button>
+            </div>
+        </div>
+        <h2 class="sg-subtitle">Componenten</h2>
+        <h3>Desktop header</h3>
+        <header class="container">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <img src="assets/images/logo.png" alt="Shelter logo">
+                </div>
+                <div class="col-12 col-sm-9">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Faciliteiten</a></li>
+                            <li><a href="#">Activiteiten</a></li>
+                            <li><a href="#">Prijzen</a></li>
+                            <li><a href="#">Reserveren</a></li>
+                            <li><a href="#">Onze camping</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <h3>Desktop footer</h3>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <ul>
+                            <li class="underline">Snel naar:</li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Faciliteiten</a></li>
+                            <li><a href="">Activiteiten</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul>
+                            <li><a href="">Prijzen</a></li>
+                            <li><a href="">Reserveren</a></li>
+                            <li><a href="">Onze camping</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 copyright">
+                        <ul>
+                            <li>&copy; Shelter</li>
+                            <li>Version: 2019</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/screenshot_opdracht.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <h3>Mobile menu</h3>
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#home" class="active">Home</a>
+                <div id="myLinks">
+                        <a href="#">Faciliteiten</a>
+                        <a href="#">Activiteiten</a>
+                        <a href="#">Prijzen</a>
+                        <a href="#">Reserveren</a>
+                        <a href="#">Onze camping</a>
+                        <a href="#">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div style="padding-left:16px">
+                <h3>Vertical Mobile Navbar</h3>
+                <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+                <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+            </div>
+
+            <!-- End smartphone / tablet look -->
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
+
 </html>

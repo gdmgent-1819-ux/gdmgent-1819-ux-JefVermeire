@@ -3,7 +3,9 @@
   /**
    * Colour palette
    */
-  --c-primary: hsl(190, 100%, 40%);
+  --c-primary: hsl(355, 57%, 56%, 1);
+  --c-secondary: #707070;
+  --c-tertiary: #000000;
 
   /**
    * Layout
@@ -13,14 +15,17 @@
   /**
    * Typography
    */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+  --t-primary: 'Baloo Bhai', cursive;
+  --t-secondary: 'Rubik', sans-serif;
 
   --t-headline: var(--t-primary);
   --t-subtitle: var(--t-primary);
   --t-body: var(--t-secondary);
   --t-code: var(--t-tertiary);
+
+  --t-regular: 15px;
+  --t-large: 20px;
+  --t-xlarge: 30px;
 }
 
 

@@ -7,3 +7,6 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+.display-flex{
+	background-color: black;
+}

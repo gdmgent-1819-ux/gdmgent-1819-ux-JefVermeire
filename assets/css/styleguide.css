@@ -1,17 +1,110 @@
 .sg-title {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: #333;
-    margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 1.7rem;
+	font-weight: 400;
+	color: #333;
+	margin: 1rem 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .sg-subtitle {
-    font-size: 1rem;
-    border-bottom: solid 1px #aaa;
-    font-weight: 400;
-    color: #666;
-    text-transform: uppercase;
-    margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 1rem;
+	border-bottom: solid 1px #aaa;
+	font-weight: 400;
+	color: #666;
+	text-transform: uppercase;
+	margin: 2rem 0 .5rem 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.primary-color,
+.secondary-color,
+.tertiary-color {
+	height: 100px;
+	color: white;
+}
+
+.primary-color {
+	background-color: var(--c-primary);
+}
+
+.secondary-color {
+	background-color: var(--c-secondary);
+}
+
+.tertiary-color {
+	background-color: var(--c-tertiary);
+}
+
+
+.primary-font {
+	font-family: var(--t-primary);
+}
+
+.secondary-font {
+	font-family: var(--t-secondary);
+}
+
+.buttons {
+	margin: 10px 0px;
+}
+
+.mobile-menu {
+	width: 500px;
+	;
+}
+
+.form input,
+textarea {
+	width: 94%;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid var(--c-tertiary);
+	margin: 10px 0px;
+}
+
+
+/* mobile menu code */
+
+.active{
+	color: var(--c-primary);
+}
+.mobile-container {
+	max-width: 480px;
+	margin: 10px 0px;
+	height: 500px;
+	color: white;
+	border-radius: 10px;
+}
+
+.topnav {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid var(--c-primary);
+	border-radius: 3px;
+}
+
+.topnav #myLinks {
+	display: none;
+}
+
+.topnav a {
+	color: var(--c-secondary);
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+	border-bottom: 1px solid var(--c-primary);
+}
+.topnav a:last-child{
+	border-bottom: none;
+}
+.topnav a.icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.topnav a:hover {
+	color: black;
 }
